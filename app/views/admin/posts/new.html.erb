@@ -1,0 +1,13 @@
+<h1>New Post</h1>
+
+<%= form_tag(admin_posts_path, method: :post) do %>
+  <%= label_tag :title, "Title" %>
+  <%= text_field_tag :title %>
+  <%= label_tag :body, "Post Body" %>
+  <%= text_area_tag :body %>
+  <%= label_tag :published, "Published?" %>
+  <%= check_box_tag :published %>
+  <%= submit_tag %>
+<% end %>
+
+<%= link_to 'Admin Index', admin_posts_path %>

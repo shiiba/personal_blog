@@ -3,5 +3,3 @@ class Post < ActiveRecord::Base
   validates :body, presence: true
 end
 
-# title, body, published?
-# @posts = Post.where(:published => true)

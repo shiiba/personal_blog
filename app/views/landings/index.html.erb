@@ -1,0 +1,12 @@
+<h1>Kevin's Blog</h1>
+
+<% @posts.each do |post| %>
+    <div>
+      <%= link_to posts_path(:id => post.id) do %>
+        <h3><%= post.title %></h3>
+      <% end %>
+      <br>
+      <hr>
+      <br>
+    </div>
+<% end %>

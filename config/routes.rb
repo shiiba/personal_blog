@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     resources :posts
   end
 
+  root 'landings#index'
+  get 'posts' => 'landings#show'
+
   devise_for :users, :controllers => { registrations: 'registrations' }
 end
 
@@ -17,6 +20,8 @@ end
 #                          PATCH  /admin/posts/:id(.:format)      admin/posts#update
 #                          PUT    /admin/posts/:id(.:format)      admin/posts#update
 #                          DELETE /admin/posts/:id(.:format)      admin/posts#destroy
+#                     root GET    /                               landings#index
+#                    posts GET    /posts(.:format)                landings#show
 #         new_user_session GET    /users/sign_in(.:format)        devise/sessions#new
 #             user_session POST   /users/sign_in(.:format)        devise/sessions#create
 #     destroy_user_session DELETE /users/sign_out(.:format)       devise/sessions#destroy

@@ -7,7 +7,7 @@ class Admin::PostsController < ApplicationController
   end
 
   def show
-    puts "hitting post route"
+    # puts "hitting post route"
   end
 
   def new
@@ -29,14 +29,15 @@ class Admin::PostsController < ApplicationController
   end
 
   def update
-    if @post.update
-      redirect_to @post
+    if @post.update(post_params)
+      redirect_to admin_post_path(@post)
     else
       render :action => :edit
     end
   end
 
   def destroy
+    # puts "hitting destroy route"
     @post.destroy
     redirect_to admin_posts_path
   end
@@ -48,7 +49,7 @@ class Admin::PostsController < ApplicationController
   end
 
   def post_params
-    params.permit(:title, :body, :published)
+    params.require(:post).permit(:title, :body, :published)
   end
 
 end

@@ -1,13 +1,13 @@
 <h1>Edit Post</h1>
 
-<%= form_tag(admin_post_path, method: :put) do %>
-  <%= label_tag :title, "Title" %>
-  <%= text_field_tag :title, @post.title %>
-  <%= label_tag :body, "Post Body" %>
-  <%= text_area_tag :body, @post.body %>
-  <%= label_tag :published, "Published?" %>
-  <%= check_box_tag :published, @post.published %>
-  <%= submit_tag %>
+<%= form_for @post, url: admin_post_path(@post), html: { method: :put } do |f| %>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+  <%= f.label :body, "Post Body" %>
+  <%= f.text_field :body %>
+  <%= f.label :published, "Published?" %>
+  <%= f.check_box :published %>
+  <%= f.submit %>
 <% end %>
 
 <%= link_to 'Admin Index', admin_posts_path %>

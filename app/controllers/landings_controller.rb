@@ -8,6 +8,9 @@ class LandingsController < ApplicationController
   def show
   end
 
+  def home
+  end
+
   private
 
   def set_post

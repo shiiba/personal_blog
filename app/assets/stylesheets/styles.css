@@ -1,0 +1,35 @@
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Rasa';
+
+
+.app-container{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#intro-container{
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+#intro-container h1{
+  color: #0cb9f2;
+}
+
+#projects-container{
+  margin-top: 4rem;
+}
+
+.project{
+  font-family: 'Rasa', serif;
+}
+
+.project h4{
+  font-size: 1.3rem;
+}
+
+#projects-container h3{
+  font-family: 'Varela Round', sans-serif;
+}
+

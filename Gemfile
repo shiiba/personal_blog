@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org' ruby '2.2.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,6 +25,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Devise
 gem 'devise'
+
+# Add the rails12 gem as well, this helps heroku integrate your assets
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

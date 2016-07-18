@@ -1,12 +1,16 @@
-<h1>Kevin's Blog Posts</h1>
+<div class="main-container">
+  <h1>Kevin's Blog Posts</h1>
 
-<% @posts.each do |post| %>
-    <div>
-      <%= link_to posts_path(:id => post.id) do %>
-        <h3><%= post.title %></h3>
-      <% end %>
-      <br>
-      <hr>
-      <br>
-    </div>
-<% end %>
+  <div class="blog-container">
+    <% @posts.each do |post| %>
+        <div class="blog-post">
+          <%= link_to "/posts/#{post.id}" do %>
+            <h3><%= post.title %></h3>
+          <% end %>
+          <p>
+            <%= truncate(post.body, length: 140) %>
+          </p>
+        </div>
+    <% end %>
+  <div>
+</div>

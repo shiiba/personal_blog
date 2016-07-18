@@ -26,8 +26,17 @@
   <% end %>
 </p>
  -->
- 
-<%= yield %>
+
+<nav>
+  <ul class="nav-ul">
+    <a href="/"><li class="nav-li">About</li></a>
+    <a href="/posts"><li class="nav-li">Blog</li></a>
+  </ul>
+</nav>
+  
+<div class="app-container">   
+  <%= yield %>
+</div>
 
 </body>
 </html>

@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
 @import 'https://fonts.googleapis.com/css?family=Rasa';
 
-
 .app-container{
   width: 60%;
   margin: 0 auto;
@@ -18,7 +17,7 @@
 }
 
 #projects-container{
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .project{
@@ -26,10 +25,56 @@
 }
 
 .project h4{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 #projects-container h3{
   font-family: 'Varela Round', sans-serif;
 }
 
+nav{
+  width: 7%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  position: fixed;
+  top: 1.5rem;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+nav li{
+  display: inline;
+  list-style-type: none;
+  text-decoration: underline;
+  margin-bottom: .7rem;
+  cursor: pointer;
+  color: #0cb9f2;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Varela Round', sans-serif;
+}
+
+p{
+  font-family: 'Rasa', serif;
+  font-size: 1.3rem;
+}
+
+.blog-post{
+  margin-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+a{
+  color: #0cb9f2;
+  text-decoration: underline;
+}
+
+.blog-container{
+  margin-top: 3rem;
+}
+
+.main-container{
+  margin-top: 3rem;
+}

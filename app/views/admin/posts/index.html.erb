@@ -1,13 +1,15 @@
-<h1>Kevin's Blog Admin Dashboard</h1>
+<div class="main-container">
+  <h1>Kevin's Blog Admin Dashboard</h1>
 
-<% @posts.each do |post| %>
-    <div>
-      <%= link_to(admin_post_path(post)) do %>
-        <h3><%= post.title %></h3>
-      <% end %>
-      <%= button_to 'Delete', admin_post_path(post), :method => 'delete' %>
-      <br>
-      <hr>
-      <br>
-    </div>
-<% end %>
+  <% @posts.each do |post| %>
+      <div>
+        <%= link_to(admin_post_path(post)) do %>
+          <h3><%= post.title %></h3>
+        <% end %>
+        <%= button_to 'Delete', admin_post_path(post), :method => 'delete' %>
+        <br>
+        <hr>
+        <br>
+      </div>
+  <% end %>
+</div>

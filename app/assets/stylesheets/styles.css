@@ -26,6 +26,7 @@
 
 .project h4{
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 #projects-container h3{
@@ -38,27 +39,29 @@ nav{
   margin-bottom: 1rem;
   position: fixed;
   top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   vertical-align: middle;
+  font-weight: bold;
 }
 
-nav li{
-  display: inline;
+.nav-li{
+  /*display: inline;*/
   list-style-type: none;
   text-decoration: underline;
-  margin-bottom: .7rem;
+  margin-bottom: .4rem;
   cursor: pointer;
   color: #0cb9f2;
   font-family: 'Varela Round', sans-serif;
 }
 
-h1, h2, h3{
+h1, h2, h3, div{
   font-family: 'Varela Round', sans-serif;
 }
 
 p{
   font-family: 'Rasa', serif;
   font-size: 1.3rem;
+  margin-top: .7rem;
 }
 
 .blog-post{
@@ -78,3 +81,52 @@ a{
 .main-container{
   margin-top: 3rem;
 }
+
+.small-screen{
+  display: none;
+}
+
+@media (max-width: 700px){
+  #intro-container{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    margin-top: 3rem;
+    font-size: .9rem;
+  }
+  
+  .small-screen{
+    display: inline;
+    margin-bottom: .2rem;
+    font-family: 'Varela Round', sans-serif;
+    /*font-weight: 400;*/
+  }
+  
+  .small-link{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0cb9f2;
+    font-weight: bold;
+  }
+  
+  .nav-li{
+    display: none;
+  }
+  
+  #projects-container{
+    margin-top: 1.5rem;
+  }
+
+  #projects-container h3{
+    font-size: 1rem;
+  }
+
+  .project h4{
+    font-size: 1.1rem;
+  }
+ 
+  .project p{
+    font-size: 1rem;
+  }
+}
+
+
